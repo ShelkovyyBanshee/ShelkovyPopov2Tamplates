@@ -7,6 +7,7 @@ void cpp() {
     float b = 1.0f;
     char y = '♂';
     double b1 = 1.0;
+    y = b + b1;
     cout << y;
     return;
 }
