@@ -1,10 +1,17 @@
 ﻿
 #include <iostream>
 using namespace std;
+#include "menu_functions.h"
 
 int main()
 {
-    int a, b, c;
-    std::cout << "Hello World!\n";
+    setlocale(LC_ALL, "Russian");
+
+    while(true)
+    {
+        printProblemsMenu();
+        int a;
+        cin >> a;
+    }
 }
 
