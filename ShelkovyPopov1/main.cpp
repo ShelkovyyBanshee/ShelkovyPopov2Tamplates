@@ -11,10 +11,12 @@ void cpp() {
     cout << y;
     return;
 }
-int main()
-{
-    cout << "Hello World!\n";
-    cpp();
+	ind = num_kFkS(pArray, n);
+	
+		
+
+
+
     return 0;
 }
  
