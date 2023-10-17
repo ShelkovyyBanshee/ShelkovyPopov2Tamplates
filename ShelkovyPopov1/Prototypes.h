@@ -43,9 +43,14 @@ int zerosProblemCheck(int* elements, int size);
 // ÇÀÄÀ×À 2
 void matrixProblemMenuOption();
 void kRowsSubOption(int** matrix, int M, int N);
+void rowsWithNegativeSubProblem(int** matrix, int Rows, int Cols);
 
 int* findMatrixKRows(int** matrix, int N);
 void printKRowsInfo(int** matrix, int N, int* kRows);
+void printRowsWithNegativeInfo(int* iOfCorrectRows, int* sums, int amountOfCorrect);
+int countOfNegative(int** matrix, int Rows, int Cols);
+int* indexesOfNegative(int** matrix, int Rows, int Cols);
+int* sumWithNegative(int** matrix, int Rows, int Cols);
 
 // ÇÀÄÀ×À 3
 void fileProblemMenuOption();

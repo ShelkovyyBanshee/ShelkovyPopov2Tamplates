@@ -19,6 +19,40 @@ void kRowsSubOption(int** matrix, int M, int N)
 	delete[] kRows;
 }
 
+void rowsWithNegativeSubProblem(int** matrix, int Rows, int Cols)
+{
+	int* iOfCorrectRows = NULL;
+	int* sums = NULL;
+
+	cout << SCS_STYLE << "ÎÒÂÅÒ ÍÀ ÏÎÄÇÀÄÀ×Ó 1:\n" << D_STYLE;
+
+	int amountOfCorrect = countOfNegative(matrix, Rows, Cols);
+
+	if(amountOfCorrect == 0)
+	{
+		cout << "Íå íàéäåíî ñòðîê ñ îòðèöàòåëüíûìè ýëåìåíòàìè.\n\n";
+		return;
+	}
+
+	iOfCorrectRows = indexesOfNegative(matrix, Rows, Cols);
+	sums = sumWithNegative(matrix, Rows, Cols);
+
+	printRowsWithNegativeInfo(iOfCorrectRows, sums, amountOfCorrect);
+	cout << endl << endl;
+	
+	delete[] iOfCorrectRows;
+	delete[] sums;
+}
+
+void printRowsWithNegativeInfo(int* iOfCorrectRows, int* sums, int amountOfCorrect)
+{
+	for(int i = 0; i < amountOfCorrect; i++)
+	{
+		cout << H_STYLE << i + 1 << ')' << D_STYLE;
+		cout << "Ñòðîêà " << SP << iOfCorrectRows[i] << D_STYLE << ". Ñóììà: " << sums[i] << endl;
+	} 
+}
+
 void printKRowsInfo(int** matrix, int N, int* kRows)
 {
 	int rowsAmount = kRows[0];
@@ -84,7 +118,7 @@ void matrixProblemMenuOption()
 			kRowsSubOption(matrix, M, N);
 			break;
 		case(2):
-			cout << SCS_STYLE << "ÎÒÂÅÒ ÍÀ ÏÎÄÇÀÄÀ×Ó 2:\n" << D_STYLE;
+			rowsWithNegativeSubProblem(matrix, M, N);
 			break;
 		}
 

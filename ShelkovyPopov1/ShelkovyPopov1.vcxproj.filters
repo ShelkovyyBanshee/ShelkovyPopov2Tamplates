@@ -90,7 +90,7 @@
     <ClCompile Include="matrix_problem.cpp">
       <Filter>Исходные файлы\source\menu\menu input</Filter>
     </ClCompile>
-    <ClCompile Include="matrix_problem_functionality.cpp">
+    <ClCompile Include="matrix_k_rows.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
     </ClCompile>
     <ClCompile Include="delete_matrix.cpp">
@@ -106,16 +106,16 @@
       <Filter>Исходные файлы\source\menu\file input</Filter>
     </ClCompile>
     <ClCompile Include="multiply_elements_between_zero.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="search_max.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
     </ClCompile>
     <ClCompile Include="odd_even_positions.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
     </ClCompile>
-    <ClCompile Include="mut_with_negative.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="search_max.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
+    </ClCompile>
+    <ClCompile Include="rows_with_negative.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
