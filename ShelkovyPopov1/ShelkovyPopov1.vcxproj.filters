@@ -5,29 +5,113 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Файлы ресурсов">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\headers">
+      <UniqueIdentifier>{22108b45-f2bf-4660-a8e6-56b454306fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source">
+      <UniqueIdentifier>{6d599ba7-8fa2-4762-ac22-9849e5dd4940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\menu">
+      <UniqueIdentifier>{bd4e6e7d-cf2b-4853-97aa-271f31883c11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\other">
+      <UniqueIdentifier>{344fb302-4069-475b-bf69-b9d5ac9b408d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\problems functionality">
+      <UniqueIdentifier>{2cfd46ac-bc1f-4a59-ad58-a150947ff144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\problems functionality\problem 3">
+      <UniqueIdentifier>{e7855b8c-8df9-4509-87d7-79051e9a2423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\problems functionality\problem 2">
+      <UniqueIdentifier>{ebb7fe3a-ff90-4c48-8140-5b19343c4e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\problems functionality\problem 1">
+      <UniqueIdentifier>{7b572118-c14d-4231-9456-88c2d073741b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\menu\input">
+      <UniqueIdentifier>{539787da-138f-47a2-9555-e2d4547c9e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\source\menu\print">
+      <UniqueIdentifier>{d1e437f1-2167-460e-8b6f-837f016eaf6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\menu\file input">
+      <UniqueIdentifier>{d7d6bf28-aa8e-4100-9f12-b4ae1397dcb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\menu\menu input">
+      <UniqueIdentifier>{63c92cae-d215-4cf7-98f5-74d928e9196b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="check_string.cpp">
+      <Filter>Исходные файлы\source\other</Filter>
+    </ClCompile>
+    <ClCompile Include="get_indexes_of_zeros_pair.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
+    </ClCompile>
+    <ClCompile Include="zeros_problem_check.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
+    </ClCompile>
+    <ClCompile Include="convert_string.cpp">
+      <Filter>Исходные файлы\source\other</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\source</Filter>
     </ClCompile>
-    <ClCompile Include="check_message.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="math_additions.cpp">
+      <Filter>Исходные файлы\source\other</Filter>
     </ClCompile>
-    <ClCompile Include="print_problems_menu.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="problem_number_input.cpp">
+      <Filter>Исходные файлы\source\menu\input</Filter>
+    </ClCompile>
+    <ClCompile Include="problems_info.cpp">
+      <Filter>Исходные файлы\source\menu\print</Filter>
+    </ClCompile>
+    <ClCompile Include="input_array.cpp">
+      <Filter>Исходные файлы\source\menu\input</Filter>
+    </ClCompile>
+    <ClCompile Include="input_elementary.cpp">
+      <Filter>Исходные файлы\source\menu\input</Filter>
+    </ClCompile>
+    <ClCompile Include="data_print.cpp">
+      <Filter>Исходные файлы\source\menu\print</Filter>
+    </ClCompile>
+    <ClCompile Include="input_matrix.cpp">
+      <Filter>Исходные файлы\source\menu\input</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix_problem.cpp">
+      <Filter>Исходные файлы\source\menu\menu input</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix_problem_functionality.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
+    </ClCompile>
+    <ClCompile Include="delete_matrix.cpp">
+      <Filter>Исходные файлы\source\other</Filter>
+    </ClCompile>
+    <ClCompile Include="array_problem.cpp">
+      <Filter>Исходные файлы\source\menu\menu input</Filter>
+    </ClCompile>
+    <ClCompile Include="file_problem.cpp">
+      <Filter>Исходные файлы\source\menu\menu input</Filter>
+    </ClCompile>
+    <ClCompile Include="fread_file.cpp">
+      <Filter>Исходные файлы\source\menu\file input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="menu_functions.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="Prototypes.h">
+      <Filter>Исходные файлы\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries.h">
+      <Filter>Исходные файлы\headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
