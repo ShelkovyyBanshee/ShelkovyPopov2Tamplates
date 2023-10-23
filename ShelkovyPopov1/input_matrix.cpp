@@ -8,6 +8,8 @@ int inputMatrixSize(bool inputFirstSize)
 
 	char var = inputFirstSize ? 'M' : 'N';
 
+	printSecondProblemSpecialInfo(false);
+
 	while(true)
 	{
 		if (inputFirstSize) cout << "¬ведите кол-во строк " << SP << "M" << D_STYLE; 
@@ -22,6 +24,7 @@ int inputMatrixSize(bool inputFirstSize)
 		delete[] inputInfo;
 
 		system("cls");
+		printSecondProblemSpecialInfo(false);
 
 		if (inputExitCode == -1) 
 		{

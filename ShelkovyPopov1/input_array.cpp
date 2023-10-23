@@ -5,7 +5,7 @@ int inputArraySize()
 	int* inputInfo = NULL;
 	int inputExitCode = 0;
 	int size = 0;
-
+	printFirstProblemSpecialInfo(false);
 	while (true)
 	{
 		cout << IN_STYLE << "¬ведите размер массива: " << D_STYLE;
@@ -16,6 +16,7 @@ int inputArraySize()
 		delete[] inputInfo;
 
 		system("cls");
+		printFirstProblemSpecialInfo(false);
 
 		if (inputExitCode == -1)
 		{

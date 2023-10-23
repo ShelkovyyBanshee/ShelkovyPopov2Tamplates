@@ -1,23 +1,20 @@
-#include <iostream>
-using namespace std;
+#include "Libraries.h"
 
-int* changeArray(int* pArray, int size) {
-	int* oddAndEvenAnswer = new int[size];
-	int count = 0;
+int* oddEvenITransformArray(int* pArray, int size)
+{
+	int* resultArray = new int[size];
+	int iR = 0;
 
-	for (int i=0;i<size;i++) { //Odd
-		if (i % 2 == 1) {
-			oddAndEvenAnswer[count] = pArray[i];
-			count++;
-		}
+	for (int i = 0; i < size; i += 2, iR++) 
+	{
+		resultArray[iR] = pArray[i];
 	}
 
-	for (int i = 0; i < size; i++) { //Even
-		if (i % 2 == 0) {
-			oddAndEvenAnswer[count] = pArray[i];
-			count++;
-		}
+	for (int i = 1; i < size; i += 2, iR++) 
+	{ 
+		resultArray[iR] = pArray[i];
 	}
-	return oddAndEvenAnswer;
+
+	return resultArray;
 
 }

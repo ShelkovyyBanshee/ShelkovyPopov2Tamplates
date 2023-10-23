@@ -46,7 +46,7 @@
     <Filter Include="Исходные файлы\source\menu\file input">
       <UniqueIdentifier>{d7d6bf28-aa8e-4100-9f12-b4ae1397dcb9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\source\menu\menu input">
+    <Filter Include="Исходные файлы\source\menu\menu options">
       <UniqueIdentifier>{63c92cae-d215-4cf7-98f5-74d928e9196b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -55,9 +55,6 @@
       <Filter>Исходные файлы\source\other</Filter>
     </ClCompile>
     <ClCompile Include="get_indexes_of_zeros_pair.cpp">
-      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
-    </ClCompile>
-    <ClCompile Include="zeros_problem_check.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
     </ClCompile>
     <ClCompile Include="convert_string.cpp">
@@ -88,7 +85,7 @@
       <Filter>Исходные файлы\source\menu\input</Filter>
     </ClCompile>
     <ClCompile Include="matrix_problem.cpp">
-      <Filter>Исходные файлы\source\menu\menu input</Filter>
+      <Filter>Исходные файлы\source\menu\menu options</Filter>
     </ClCompile>
     <ClCompile Include="matrix_k_rows.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
@@ -97,10 +94,10 @@
       <Filter>Исходные файлы\source\other</Filter>
     </ClCompile>
     <ClCompile Include="array_problem.cpp">
-      <Filter>Исходные файлы\source\menu\menu input</Filter>
+      <Filter>Исходные файлы\source\menu\menu options</Filter>
     </ClCompile>
     <ClCompile Include="file_problem.cpp">
-      <Filter>Исходные файлы\source\menu\menu input</Filter>
+      <Filter>Исходные файлы\source\menu\menu options</Filter>
     </ClCompile>
     <ClCompile Include="fread_file.cpp">
       <Filter>Исходные файлы\source\menu\file input</Filter>
@@ -116,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="rows_with_negative.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
+    </ClCompile>
+    <ClCompile Include="global_menu.cpp">
+      <Filter>Исходные файлы\source\menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

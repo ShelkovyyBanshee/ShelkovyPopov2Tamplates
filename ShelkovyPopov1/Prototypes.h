@@ -12,10 +12,13 @@ const char SP[] = "\033[1;36;40m"; // Сильное выделение
 const char SCS_STYLE[] = "\033[0;32;40m"; // Зелёный стиль для соообщений об успешном вводе
 
 // МЕНЮ
+
+void runGlobalMenu();
+
 // Справочная информация по задачам
 void printProblemsMenu();
-void printFirstProblemSpecialInfo();
-void printSecondProblemSpecialInfo();
+void printFirstProblemSpecialInfo(bool printZero=true);
+void printSecondProblemSpecialInfo(bool printZero=true);
 
 // Визуализация ввода массива и матрицы
 void printArrayInputProgress(int* arr, int size, int elementsEntered);
@@ -38,7 +41,10 @@ int inputMatrixSize(bool inputFirstSize);
 void arrayProblemMenuOption();
 
 int* getIndexesOfZsPair(int* elements, int size);
-int zerosProblemCheck(int* elements, int size);
+int* multiplyZero(int* pArray, const int size);
+int* oddEvenITransformArray(int* pArray, int size);
+int findMaxElInArray(int* pArray, int size);
+int* maxOfElements(int* pArray, int size);
 
 // ЗАДАЧА 2
 void matrixProblemMenuOption();
@@ -64,7 +70,7 @@ int charToInt(char c);
 // Проверки строк
 bool isInteger(char* str);
 
-// Матиматические дополнения
+// Математические дополнения
 int intPow(int n, int degree);
 
 // Освобождение памяти

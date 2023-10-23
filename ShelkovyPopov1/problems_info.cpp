@@ -9,7 +9,7 @@ void printProblemsMenu()
     cout << H_STYLE << "\t1)" << D_STYLE;
     cout << " найти максимальный элемент массива. Найти их количество и позиции\n";
     cout << H_STYLE << "\t2)" << D_STYLE;
-    cout << " произведение элементов массива, расположенных между 1 и 2 нулевыми элементами.\n";
+    cout << " найти произведение элементов массива, расположенных между 1 и 2 нулевыми элементами.\n";
     cout << "\t   найти позиции нулевых элементов, между которыми найдено произведение\n";
     cout << H_STYLE << "\t3)" << D_STYLE;
     cout << " преобразовать массив таким образом, чтобы в первой его половине располагались\n";
@@ -32,13 +32,16 @@ void printProblemsMenu()
     cout << "Так же вы можете ввести 0, чтобы завершить программу.\n\n\n";
 }
 
-void printFirstProblemSpecialInfo()
+void printFirstProblemSpecialInfo(bool printZero)
 {
     cout << H_STYLE << "Список подзадач:\n" << D_STYLE;
 
-    cout << H_STYLE << "0)" << D_STYLE;
-    cout << " Вернуться в начальное меню" << H_STYLE << " (потеря введённого массива).\n" << D_STYLE;
-
+    if (printZero)
+    {
+        cout << H_STYLE << "0)" << D_STYLE;
+        cout << " Вернуться в начальное меню" << H_STYLE << " (потеря введённого массива).\n" << D_STYLE;
+    }
+    
     cout << H_STYLE << "1)" << D_STYLE;
     cout << " Найти максимальный элемент массива. Количество таких элементов и их позиции.\n";
 
@@ -52,13 +55,16 @@ void printFirstProblemSpecialInfo()
     cout << "   стоявшие в четных позициях.\n\n";
 }
 
-void printSecondProblemSpecialInfo()
+void printSecondProblemSpecialInfo(bool printZero)
 {
     cout << H_STYLE << "Список подзадач:\n" << D_STYLE;
 
-    cout << H_STYLE << "0)" << D_STYLE;
-    cout << " Вернуться в начальное меню " << H_STYLE << "(потеря введённой матрицы)" << D_STYLE << endl;
-
+    if (printZero)
+    {
+        cout << H_STYLE << "0)" << D_STYLE;
+        cout << " Вернуться в начальное меню " << H_STYLE << "(потеря введённой матрицы)" << D_STYLE << endl;
+    }
+    
     cout << H_STYLE << "1)" << D_STYLE;
     cout << " Найти такие числа " << SP << "k" << D_STYLE << ", что " << SP << "k" << D_STYLE << "-я строка матрицы совпадает с " << SP << "k" << D_STYLE << "-м столбцом.Вывести номер k\n";
     cout << "   и все элементы расположенные в " << SP << "k" << D_STYLE << "-ой строке (столбце)\n";

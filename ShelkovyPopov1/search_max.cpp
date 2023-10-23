@@ -1,51 +1,43 @@
-#include <iostream>
-using namespace std;
-int* maxOfElements(int* pArray, const int size) // max = {maxElement, count, {index of elements}}
+#include "Libraries.h"
+
+int findMaxElInArray(int* pArray, int size)
 {
-    int count = 0;
-    int tmax = 0;
-    int* tempMax = new int[size];
-
-    int t = 0;
-    int* max = new int[count + 2];
-
-    for (int i = 0; i < size; i++) //находим макс
+    int maxEl = pArray[0];
+    for (int i = 1; i < size; i++)
     {
-        if (pArray[i] > tmax)
-        {
-            tmax = pArray[i];
-        }
+        if (pArray[i] > maxEl)
+            maxEl = pArray[i];
     }
+
+    return maxEl;
+}
+
+int* maxOfElements(int* pArray, int size) // max = {maxElement, count, index of elements}
+{
+    int countMax = 0;
+    int tMax = findMaxElInArray(pArray, size);
+    int* result = NULL; 
+
 
     for (int i = 0; i < size; i++) //находим количество макс
     {
-        if (pArray[i] == tmax)
-        {
-            count++;
-        }
+        if (pArray[i] == tMax)
+            countMax++;
     }
+    
+    result = new int[countMax + 2];
+    result[0] = tMax;
+    result[1] = countMax;
 
-
-
+    int t = 2;
     for (int i = 0; i < size; i++)
     {
-        if (pArray[i] == tmax)
+        if (pArray[i] == tMax)
         {
-            tempMax[t] = i;
+            result[t] = i;
             t++;
         }
     }
 
-    //cout << count + 2 << endl;
-    max[0] = tmax;
-    max[1] = count;
-
-    for (int i = 2; i < (count + 2); i++) //создаем массив
-    {
-        max[i] = tempMax[i - 2];
-    }
-
-    delete[]tempMax;
-
-    return max;
+    return result;
 }

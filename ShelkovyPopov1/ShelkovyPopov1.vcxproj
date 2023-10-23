@@ -132,6 +132,7 @@
     <ClCompile Include="delete_matrix.cpp" />
     <ClCompile Include="fread_file.cpp" />
     <ClCompile Include="file_problem.cpp" />
+    <ClCompile Include="global_menu.cpp" />
     <ClCompile Include="input_array.cpp" />
     <ClCompile Include="input_matrix.cpp" />
     <ClCompile Include="input_elementary.cpp" />
@@ -140,7 +141,6 @@
     <ClCompile Include="data_print.cpp" />
     <ClCompile Include="problem_number_input.cpp" />
     <ClCompile Include="matrix_k_rows.cpp" />
-    <ClCompile Include="zeros_problem_check.cpp" />
     <ClCompile Include="get_indexes_of_zeros_pair.cpp" />
     <ClCompile Include="check_string.cpp" />
     <ClCompile Include="rows_with_negative.cpp" />
