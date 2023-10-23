@@ -117,6 +117,12 @@
     <ClCompile Include="global_menu.cpp">
       <Filter>Исходные файлы\source\menu</Filter>
     </ClCompile>
+    <ClCompile Include="check_zeros.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
+    </ClCompile>
+    <ClCompile Include="count_words.cpp">
+      <Filter>Исходные файлы\source\problems functionality\problem 3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">

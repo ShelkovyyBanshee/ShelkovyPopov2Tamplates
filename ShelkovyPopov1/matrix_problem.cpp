@@ -89,11 +89,14 @@ void matrixProblemMenuOption()
 	cout << H_STYLE << "ÂÛ ÂÛÁÐÀËÈ ÇÀÄÀ×Ó < 2 >\n" << D_STYLE;
 
 	M = inputMatrixSize(true);
+	system("cls");
 	N = inputMatrixSize(false);
 
 	system("cls");
 
 	matrix = inputMatrix(M, N);
+	system("cls");
+	printMatrixInputProgress(matrix, M, N, M * N);
 	cout << SCS_STYLE << "Ìàòðèöà óñïåøíî ââåäåíà!\n\n" << D_STYLE;
 
 	int optionNumber = -1;

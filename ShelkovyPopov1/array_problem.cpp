@@ -15,6 +15,30 @@ void printMaxesInfo(int* info)
     cout << info[amount + 1] << endl;
 }
 
+void printZerosWrongInputInfo(int* indexesOfPair)
+{
+    int iFirst = indexesOfPair[0];
+    int iSecond = indexesOfPair[1];
+
+    cout << IMP_STYLE << "Невозможно решить задачу: " << D_STYLE;
+
+    if (iFirst == -1)
+    {
+        cout << "в введённом массиве не найдено нулевых элементов." << endl;
+        cout << "Для решения задачи в массиве должно быть 2 нулевых элемента." << endl;
+    }   
+    else if (iSecond == -1)
+    {
+        cout << "в введённом массиве только один нулевой элемент." << endl;
+        cout << "Для решения задачи в массиве должно быть 2 нулевых элемента." << endl;
+    }
+    else if (iSecond - iFirst < 3)
+    {
+        cout << "между нулевыми элементами должно быть хотя бы 2 элемента для рассчёта произведения." << endl; 
+    }
+}
+
+
 void arrayProblemMenuOption()
 {
     cout << H_STYLE << "ВЫ ВЫБРАЛИ ЗАДАЧУ < 1 >\n" << D_STYLE;
@@ -28,6 +52,9 @@ void arrayProblemMenuOption()
     cout << endl;
 
     int optionNumber = -1;
+    int* answer = NULL;
+    int* indexesZeros = NULL;
+
     while(optionNumber != 0)
     {
         printFirstProblemSpecialInfo();
@@ -49,15 +76,39 @@ void arrayProblemMenuOption()
             break;
         case(1):
             cout << endl << SCS_STYLE << "ОТВЕТ НА ПОДЗАДАЧУ 1:" << D_STYLE << endl;
-            int* answer = maxOfElements(arr, size);
+            answer = maxOfElements(arr, size);
             printMaxesInfo(answer);
             cout << endl;
             delete[] answer;
             break;
         case(2):
-            cout << endl << SCS_STYLE << "ОТВЕТ НА ПОЗАДАЧУ 2:" << D_STYLE << endl;
+            cout << endl << SCS_STYLE << "ОТВЕТ НА ПОДЗАДАЧУ 2:" << D_STYLE << endl;
+            indexesZeros = getIndexesOfZsPair(arr, size);
+            if (!checkZerosPair(indexesZeros))
+            {
+                printZerosWrongInputInfo(indexesZeros);
+            }
+            else
+            {
+                answer = multiplyZero(arr, size);
+                cout << "Найденное произведение: " << answer[0] << endl;
+                cout << "Индексы первых двух нулевых элементов: " << answer[1] << " " << answer[2] << endl;
+                delete[] answer;
+            }
+            cout << endl;
+            delete[] indexesZeros;
+            break;
         case(3):
-            cout << endl << SCS_STYLE << "ОТВЕТ НА ПОЗАДАЧУ 3:" << D_STYLE << endl;
+            cout << endl << SCS_STYLE << "ОТВЕТ НА ПОДЗАДАЧУ 3:" << D_STYLE << endl;
+            answer = oddEvenITransformArray(arr, size);
+            cout << "Введённый массив:\t";
+            printArray(arr, size);
+            cout << endl;
+            cout << "Преобразованный массив:\t";
+            printArray(answer, size);
+            cout << endl << endl;
+            delete[] answer;
+            break;
         }
 
         if (optionNumber > 0) cout << H_STYLE << ">>Выберите другую подзадачу или вернитесь в меню.\n\n" << D_STYLE;

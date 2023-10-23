@@ -35,3 +35,8 @@ bool isFractionalOrInteger(char* str)
 
 	return true;
 }
+
+bool isLetter(char c)
+{
+	return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= 'à' && c <= 'ÿ') || (c >= 'À' && c <= 'ß');
+}

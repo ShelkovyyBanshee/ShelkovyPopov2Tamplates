@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="count_words.cpp" />
     <ClCompile Include="array_problem.cpp" />
+    <ClCompile Include="check_zeros.cpp" />
     <ClCompile Include="convert_string.cpp" />
     <ClCompile Include="delete_matrix.cpp" />
     <ClCompile Include="fread_file.cpp" />

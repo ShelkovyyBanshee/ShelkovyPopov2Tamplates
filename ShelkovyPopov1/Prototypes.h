@@ -40,11 +40,15 @@ int inputMatrixSize(bool inputFirstSize);
 // ЗАДАЧА 1
 void arrayProblemMenuOption();
 
+void printMaxesInfo(int* info);
+void printZerosWrongInputInfo(int* indexesOfPair);
+
 int* getIndexesOfZsPair(int* elements, int size);
 int* multiplyZero(int* pArray, const int size);
 int* oddEvenITransformArray(int* pArray, int size);
 int findMaxElInArray(int* pArray, int size);
 int* maxOfElements(int* pArray, int size);
+bool checkZerosPair(int* indexesOfPair);
 
 // ЗАДАЧА 2
 void matrixProblemMenuOption();
@@ -60,6 +64,9 @@ int* sumWithNegative(int** matrix, int Rows, int Cols);
 
 // ЗАДАЧА 3
 void fileProblemMenuOption();
+void printWords(int* startIndexes, char* text, int textSize);
+int* getStartIOfCorrectWords(char* file, int fileSize, int maxSize);
+int countWordsByLen(char* file, int fileSize, int maxSize);
 
 // ПРОЧЕЕ
 
@@ -69,6 +76,7 @@ int charToInt(char c);
 
 // Проверки строк
 bool isInteger(char* str);
+bool isLetter(char c);
 
 // Математические дополнения
 int intPow(int n, int degree);

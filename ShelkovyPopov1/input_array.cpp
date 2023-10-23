@@ -64,6 +64,7 @@ int* inputArray(int size)
 	int inputExitCode = 0;
 	int elementEntered = 0;
 
+	printFirstProblemSpecialInfo(false);
 	printArrayInputProgress(arr, size, 0);
 
 	for(int i = 0; i < size; i++)
@@ -78,6 +79,7 @@ int* inputArray(int size)
 			delete[] elementInputInfo;
 
 			system("cls");
+			printFirstProblemSpecialInfo(false);
 
 			if (inputExitCode != 0) 
 			{

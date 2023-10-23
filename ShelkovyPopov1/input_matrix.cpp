@@ -85,6 +85,7 @@ int** inputMatrix(int Rows, int Cols)
 	int elInputExitCode = 0;
 	int el = 0;
 
+	printSecondProblemSpecialInfo(false);
 	printMatrixInputProgress(matrix, Rows, Cols, 0);
 
 	for (int row = 0; row < Rows; row++)
@@ -93,7 +94,6 @@ int** inputMatrix(int Rows, int Cols)
 
 		for (int col = 0; col < Cols; col++)
 		{
-			
 			while (true)
 			{
 				
@@ -104,6 +104,7 @@ int** inputMatrix(int Rows, int Cols)
 				delete[] elInputInfo;
 
 				system("cls");
+				printSecondProblemSpecialInfo(false);
 
 				if (elInputExitCode != 0) 
 				{
