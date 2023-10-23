@@ -23,7 +23,7 @@ void arrayProblemMenuOption()
     int size = inputArraySize();
 
     system("cls");
-
+    int* answer = NULL;
     arr = inputArray(size);
     cout << endl;
 
@@ -49,7 +49,7 @@ void arrayProblemMenuOption()
             break;
         case(1):
             cout << endl << SCS_STYLE << "ÎÒÂÅÒ ÍÀ ÏÎÄÇÀÄÀ×Ó 1:" << D_STYLE << endl;
-            int* answer = maxOfElements(arr, size);
+            answer = maxOfElements(arr, size);
             printMaxesInfo(answer);
             cout << endl;
             delete[] answer;
