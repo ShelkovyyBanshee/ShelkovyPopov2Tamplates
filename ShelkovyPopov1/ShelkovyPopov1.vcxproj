@@ -132,6 +132,7 @@
     <ClCompile Include="check_zeros.cpp" />
     <ClCompile Include="convert_string.cpp" />
     <ClCompile Include="delete_matrix.cpp" />
+    <ClCompile Include="file_input.cpp" />
     <ClCompile Include="fread_file.cpp" />
     <ClCompile Include="file_problem.cpp" />
     <ClCompile Include="global_menu.cpp" />

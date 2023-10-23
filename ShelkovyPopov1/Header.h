@@ -8,3 +8,5 @@ int* multWithNegative(int** array, int n,int m);
 int countOfNegative(int** array, int n, int m);
 
 int* indexesOfNegative(int** array, int n, int m);
+
+void wordsFile(char* chrArray, int* numArray, int sizeChar, int sizeNum);

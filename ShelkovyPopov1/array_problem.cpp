@@ -47,7 +47,7 @@ void arrayProblemMenuOption()
     int size = inputArraySize();
 
     system("cls");
-
+    int* answer = NULL;
     arr = inputArray(size);
     cout << endl;
 
