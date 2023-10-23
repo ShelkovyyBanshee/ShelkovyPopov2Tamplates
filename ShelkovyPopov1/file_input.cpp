@@ -13,6 +13,7 @@ char* nameOfFile() //name of file
 
     return answer;
 }
+
 char* FileRead(int size) //read and write file
 {
     int index = 0;
@@ -31,6 +32,7 @@ char* FileRead(int size) //read and write file
     str.close();
     return words;
 }
+
 int volumeOfFile()// size of file
 {
     int size = 0;
