@@ -6,5 +6,6 @@ void deleteMatrix(int** matrix, int rows)
 	{
 		delete[] matrix[i];
 	}
+
 	delete[] matrix;
 }

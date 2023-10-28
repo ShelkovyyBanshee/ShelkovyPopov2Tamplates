@@ -49,7 +49,7 @@ void printRowsWithNegativeInfo(int* iOfCorrectRows, int* sums, int amountOfCorre
 	for(int i = 0; i < amountOfCorrect; i++)
 	{
 		cout << H_STYLE << i + 1 << ')' << D_STYLE;
-		cout << "Строка " << SP << iOfCorrectRows[i] << D_STYLE << ". Сумма: " << sums[i] << endl;
+		cout << " Строка " << SP << iOfCorrectRows[i] << D_STYLE << ". Сумма: " << sums[i] << endl;
 	} 
 }
 
@@ -63,19 +63,19 @@ void printKRowsInfo(int** matrix, int N, int* kRows)
 		return;
 	}
 
-	cout << "Найденные " << SP << "k" << D_STYLE << "-ые строки(столбцы) :\n";
+	cout << "Найденные " << SP << "k" << D_STYLE << "-ые строки (столбцы):\n";
 
 	int k = 0;
 	for (int iK = 1; iK < rowsAmount + 1; iK++)
 	{
 		k = kRows[iK];
 
-		cout << H_STYLE << iK << ")" << D_STYLE << " cтрока " << SP << k << D_STYLE << ": ";
+		cout << H_STYLE << iK << ")" << D_STYLE << " cтрока " << SP << k << D_STYLE << ". Элементы строки: ";
 		for (int i = 0; i < N - 1; i++)
 		{
 			cout << matrix[k][i] << ", ";
 		}
-		cout << matrix[k][N - 1] << ";\n";
+		cout << matrix[k][N - 1] << "\n";
 	}
 	cout << endl;
 }
@@ -128,5 +128,5 @@ void matrixProblemMenuOption()
 		if (optionNumber > 0) cout << H_STYLE << ">>Выберите другую подзадачу или вернитесь в меню.\n\n" << D_STYLE;
 	}
 	
-	deleteMatrix(matrix, N);
+	deleteMatrix(matrix, M);
 }

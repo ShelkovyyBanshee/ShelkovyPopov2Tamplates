@@ -151,6 +151,7 @@
     <ClCompile Include="multiply_elements_between_zero.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="problems_info.cpp" />
+    <ClCompile Include="wait_input.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Libraries.h" />
@@ -159,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

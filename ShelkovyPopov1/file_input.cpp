@@ -1,9 +1,9 @@
 #include "Libraries.h"
 
-char* nameOfFile() //name of file
+char* getFileName()
 {
-    char fileName[] = "TextFile.txt";
-    int size = (int)strlen(fileName);
+    char fileName[] = "input.txt";
+    int size = (int)strlen(fileName) + 1;
     char* answer = new char[size];
 
     for (int i = 0; i < size; i++)
@@ -14,17 +14,17 @@ char* nameOfFile() //name of file
     return answer;
 }
 
-char* FileRead(int size) //read and write file
+char* readFile(int size)
 {
     int index = 0;
     char* words = new char[size + 1];
     char letter;
     ifstream str;
 
-    str.open(nameOfFile());
+    str.open(getFileName());
     str.seekg(0, ios::beg);
 
-    while (str.get(letter)) //read
+    while (str.get(letter)) 
     {
         words[index] = letter;
         index++;
@@ -33,15 +33,16 @@ char* FileRead(int size) //read and write file
     return words;
 }
 
-int volumeOfFile()// size of file
+int fileSize()
 {
     int size = 0;
     ifstream str;
 
-    str.open(nameOfFile());
-    str.seekg(0, ios::end); // end of file
-    size = int(str.tellg()); // size of file
-    str.seekg(0, ios::beg); // return to begin of file
+    str.open(getFileName());
+    str.seekg(0, ios::end); 
+    size = int(str.tellg()); 
+    str.seekg(0, ios::beg); 
     str.close();
     return size;
 }
+

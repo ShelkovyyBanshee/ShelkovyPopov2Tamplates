@@ -1,6 +1,6 @@
 #include "Libraries.h"
 
-int countWordsByLen(char* file, int fileSize, int maxSize) // [10, 0, 10 17] kolp poplp
+int countWordsByLen(char* file, int fileSize, int maxSize) 
 {
 	int currWordCount = 0;
 	int result = 0;
@@ -9,7 +9,7 @@ int countWordsByLen(char* file, int fileSize, int maxSize) // [10, 0, 10 17] kol
 	{
 		char sym = file[i];
 
-		if (isLetter(sym))
+		if (isLetter(sym) || isDigit(sym))
 		{
 			currWordCount += 1;
 		}
@@ -44,7 +44,7 @@ int* getStartIOfCorrectWords(char* file, int fileSize, int maxSize)
 	for (int i = 0; i < fileSize; i++)
 	{
 		char sym = file[i];
-		if (isLetter(sym))
+		if (isLetter(sym) || isDigit(sym))
 		{
 			currWordCount += 1;
 		}

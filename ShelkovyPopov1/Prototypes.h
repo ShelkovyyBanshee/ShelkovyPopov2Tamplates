@@ -37,6 +37,13 @@ int inputArraySize();
 int** inputMatrix(int Rows, int Cols);
 int inputMatrixSize(bool inputFirstSize);
 
+void waitForInput();
+
+// РАБОТА С ФАЙЛОМ
+char* getFileName();
+int fileSize();
+char* readFile(int size);
+
 // ЗАДАЧА 1
 void arrayProblemMenuOption();
 
@@ -76,6 +83,7 @@ int charToInt(char c);
 
 // Проверки строк
 bool isInteger(char* str);
+bool isDigit(char c);
 bool isLetter(char c);
 
 // Математические дополнения

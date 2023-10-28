@@ -123,6 +123,12 @@
     <ClCompile Include="count_words.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 3</Filter>
     </ClCompile>
+    <ClCompile Include="file_input.cpp">
+      <Filter>Исходные файлы\source</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_input.cpp">
+      <Filter>Исходные файлы\source\menu\input</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -136,5 +142,10 @@
     <ClInclude Include="Libraries.h">
       <Filter>Исходные файлы\headers</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>Исходные файлы\source</Filter>
+    </Text>
   </ItemGroup>
 </Project>
