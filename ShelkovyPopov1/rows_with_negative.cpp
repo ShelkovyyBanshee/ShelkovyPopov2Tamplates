@@ -53,7 +53,7 @@ int* indexesOfNegative(int** matrix, int Rows, int Cols)
 
 	}
 	return correctRows;
-};
+}
 
 
 int* sumWithNegative(int** matrix, int Rows, int Cols)
@@ -88,4 +88,4 @@ int* sumWithNegative(int** matrix, int Rows, int Cols)
 	}
 
 	return result;
-};
+}

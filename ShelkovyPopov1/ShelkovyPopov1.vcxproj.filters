@@ -49,19 +49,28 @@
     <Filter Include="Исходные файлы\source\menu\menu options">
       <UniqueIdentifier>{63c92cae-d215-4cf7-98f5-74d928e9196b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\templates">
+      <UniqueIdentifier>{4c5d1ab6-e27c-4acb-b44e-1a7a09ae3c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\templates\menu_options">
+      <UniqueIdentifier>{79f20dd3-66c8-4e53-b8af-310eeb62dd54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\templates\problems_functionality">
+      <UniqueIdentifier>{fe6dafb1-b0cb-41b0-af46-dc70b660a092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\templates\print">
+      <UniqueIdentifier>{d14bc7cb-fa28-4726-b85e-8d548d9e84c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\templates\input">
+      <UniqueIdentifier>{cded122d-24e9-4d2f-9765-43daa200e4db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="check_string.cpp">
       <Filter>Исходные файлы\source\other</Filter>
     </ClCompile>
-    <ClCompile Include="get_indexes_of_zeros_pair.cpp">
-      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
-    </ClCompile>
     <ClCompile Include="convert_string.cpp">
       <Filter>Исходные файлы\source\other</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Исходные файлы\source</Filter>
     </ClCompile>
     <ClCompile Include="math_additions.cpp">
       <Filter>Исходные файлы\source\other</Filter>
@@ -72,44 +81,23 @@
     <ClCompile Include="problems_info.cpp">
       <Filter>Исходные файлы\source\menu\print</Filter>
     </ClCompile>
-    <ClCompile Include="input_array.cpp">
+    <ClCompile Include="input_array_size.cpp">
       <Filter>Исходные файлы\source\menu\input</Filter>
     </ClCompile>
     <ClCompile Include="input_elementary.cpp">
       <Filter>Исходные файлы\source\menu\input</Filter>
     </ClCompile>
-    <ClCompile Include="data_print.cpp">
-      <Filter>Исходные файлы\source\menu\print</Filter>
-    </ClCompile>
-    <ClCompile Include="input_matrix.cpp">
+    <ClCompile Include="input_matrix_size.cpp">
       <Filter>Исходные файлы\source\menu\input</Filter>
-    </ClCompile>
-    <ClCompile Include="matrix_problem.cpp">
-      <Filter>Исходные файлы\source\menu\menu options</Filter>
     </ClCompile>
     <ClCompile Include="matrix_k_rows.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
-    </ClCompile>
-    <ClCompile Include="delete_matrix.cpp">
-      <Filter>Исходные файлы\source\other</Filter>
-    </ClCompile>
-    <ClCompile Include="array_problem.cpp">
-      <Filter>Исходные файлы\source\menu\menu options</Filter>
     </ClCompile>
     <ClCompile Include="file_problem.cpp">
       <Filter>Исходные файлы\source\menu\menu options</Filter>
     </ClCompile>
     <ClCompile Include="fread_file.cpp">
       <Filter>Исходные файлы\source\menu\file input</Filter>
-    </ClCompile>
-    <ClCompile Include="multiply_elements_between_zero.cpp">
-      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
-    </ClCompile>
-    <ClCompile Include="odd_even_positions.cpp">
-      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
-    </ClCompile>
-    <ClCompile Include="search_max.cpp">
-      <Filter>Исходные файлы\source\problems functionality\problem 1</Filter>
     </ClCompile>
     <ClCompile Include="rows_with_negative.cpp">
       <Filter>Исходные файлы\source\problems functionality\problem 2</Filter>
@@ -129,10 +117,55 @@
     <ClCompile Include="wait_input.cpp">
       <Filter>Исходные файлы\source\menu\input</Filter>
     </ClCompile>
+    <ClCompile Include="data_type_input.cpp">
+      <Filter>Исходные файлы\source\menu\input</Filter>
+    </ClCompile>
+    <ClCompile Include="print_zeros_reaction.cpp">
+      <Filter>Исходные файлы\source\menu\print</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="print_data_type.cpp">
+      <Filter>Исходные файлы\source\menu\print</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="is_number_of_type.h">
+      <Filter>Исходные файлы\templates</Filter>
+    </ClInclude>
+    <ClInclude Include="array_menu_option.h">
+      <Filter>Исходные файлы\templates\menu_options</Filter>
+    </ClInclude>
+    <ClInclude Include="array_problems.h">
+      <Filter>Исходные файлы\templates\problems_functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix_problems.h">
+      <Filter>Исходные файлы\templates\problems_functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="print_array.h">
+      <Filter>Исходные файлы\templates\print</Filter>
+    </ClInclude>
+    <ClInclude Include="input_array.h">
+      <Filter>Исходные файлы\templates\input</Filter>
+    </ClInclude>
+    <ClInclude Include="input_number.h">
+      <Filter>Исходные файлы\templates\input</Filter>
+    </ClInclude>
+    <ClInclude Include="string_to_number.h">
+      <Filter>Исходные файлы\templates</Filter>
+    </ClInclude>
+    <ClInclude Include="print_number.h">
+      <Filter>Исходные файлы\templates\print</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix_menu_option.h">
+      <Filter>Исходные файлы\templates\menu_options</Filter>
+    </ClInclude>
+    <ClInclude Include="input_matrix.h">
+      <Filter>Исходные файлы\templates\input</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_matrix.h">
+      <Filter>Исходные файлы\templates</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

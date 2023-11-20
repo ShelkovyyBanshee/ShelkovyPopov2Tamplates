@@ -128,38 +128,42 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="count_words.cpp" />
-    <ClCompile Include="array_problem.cpp" />
     <ClCompile Include="check_zeros.cpp" />
     <ClCompile Include="convert_string.cpp" />
-    <ClCompile Include="delete_matrix.cpp" />
+    <ClCompile Include="data_type_input.cpp" />
     <ClCompile Include="file_input.cpp" />
     <ClCompile Include="fread_file.cpp" />
     <ClCompile Include="file_problem.cpp" />
     <ClCompile Include="global_menu.cpp" />
-    <ClCompile Include="input_array.cpp" />
-    <ClCompile Include="input_matrix.cpp" />
+    <ClCompile Include="input_array_size.cpp" />
+    <ClCompile Include="input_matrix_size.cpp" />
     <ClCompile Include="input_elementary.cpp" />
     <ClCompile Include="math_additions.cpp" />
-    <ClCompile Include="matrix_problem.cpp" />
-    <ClCompile Include="data_print.cpp" />
+    <ClCompile Include="print_data_type.cpp" />
     <ClCompile Include="problem_number_input.cpp" />
     <ClCompile Include="matrix_k_rows.cpp" />
-    <ClCompile Include="get_indexes_of_zeros_pair.cpp" />
     <ClCompile Include="check_string.cpp" />
     <ClCompile Include="rows_with_negative.cpp" />
-    <ClCompile Include="search_max.cpp" />
-    <ClCompile Include="multiply_elements_between_zero.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="problems_info.cpp" />
+    <ClCompile Include="print_zeros_reaction.cpp" />
     <ClCompile Include="wait_input.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="array_menu_option.h" />
+    <ClInclude Include="array_problems.h" />
+    <ClInclude Include="delete_matrix.h" />
+    <ClInclude Include="input_matrix.h" />
+    <ClInclude Include="matrix_menu_option.h" />
+    <ClInclude Include="print_number.h" />
+    <ClInclude Include="input_array.h" />
+    <ClInclude Include="input_number.h" />
+    <ClInclude Include="is_number_of_type.h" />
     <ClInclude Include="Libraries.h" />
+    <ClInclude Include="matrix_problems.h" />
+    <ClInclude Include="print_array.h" />
     <ClInclude Include="Prototypes.h" />
-    <ClCompile Include="odd_even_positions.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Header.h" />
+    <ClInclude Include="string_to_number.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

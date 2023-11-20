@@ -1,4 +1,6 @@
 #include "Libraries.h"
+#include "array_menu_option.h"
+#include "matrix_menu_option.h"
 
 void runGlobalMenu()
 {
@@ -6,6 +8,7 @@ void runGlobalMenu()
 
     bool programClosed = false;
     int problemChoice = -1;
+    char dataType = '0';
 
     setlocale(LC_ALL, "Russian");
 
@@ -27,16 +30,34 @@ void runGlobalMenu()
 
         system("cls");
 
+        dataType = '0';
+
+        if (problemChoice <= 2 && problemChoice > 0)
+        {
+            dataType = inputDataType(problemChoice);
+            system("cls");
+        }
+
         switch (problemChoice)
         {
         case(0):
             programClosed = true;
             break;
         case(1):
-            arrayProblemMenuOption();
+            if (dataType == 'i')
+                arrayProblemMenuOption(1, dataType);
+            else if (dataType == 'f')
+                arrayProblemMenuOption(1.0f, dataType);
+            else if (dataType == 'd')
+                arrayProblemMenuOption(1.0, dataType);
             break;
         case(2):
-            matrixProblemMenuOption();
+            if (dataType == 'i')
+                matrixProblemMenuOption(1, dataType);
+            else if (dataType == 'f')
+                matrixProblemMenuOption(1.0f, dataType);
+            else if (dataType == 'd')
+                matrixProblemMenuOption(1.0, dataType);
             break;
         case(3):
             fileProblemMenuOption();

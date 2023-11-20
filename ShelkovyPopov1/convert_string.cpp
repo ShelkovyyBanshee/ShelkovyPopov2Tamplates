@@ -12,15 +12,15 @@ int strToInt(char* str)
 	int startI = 0;
 	int signK = 1;
 
-	for(;str[nDigits] != '\0'; nDigits++) {}
+	for (;str[nDigits] != '\0'; nDigits++) {}
 
-	if (nDigits > 0 && str[0] == '-') 
+	if (nDigits > 0 && str[0] == '-')
 	{
 		startI = 1;
 		signK = -1;
 	}
 
-	for(int i = startI; i < nDigits; i++)
+	for (int i = startI; i < nDigits; i++)
 		result += charToInt(str[i]) * intPow(10, nDigits - 1 - i);
 
 	result *= signK;
@@ -28,8 +28,3 @@ int strToInt(char* str)
 	return result;
 }
 
-double strToDouble(char* str)
-{
-	double result = 0.0;
-	return result;
-}

@@ -15,28 +15,25 @@ const char SCS_STYLE[] = "\033[0;32;40m"; // Зелёный стиль для соообщений об усп
 
 void runGlobalMenu();
 
-// Справочная информация по задачам
+// Функции вывода
 void printProblemsMenu();
-void printFirstProblemSpecialInfo(bool printZero=true);
-void printSecondProblemSpecialInfo(bool printZero=true);
+void printDataType(char type);
+void printFirstProblemSpecialInfo(bool printZero = true);
+void printSecondProblemSpecialInfo(bool printZero = true);
 
-// Визуализация ввода массива и матрицы
-void printArrayInputProgress(int* arr, int size, int elementsEntered);
-void printArray(int* arr, int size);
-void printMatrixInputProgress(int** matrix, int Rows, int Cols, int elementsEntered);
-
-// Функции ввода
+// Элементарный ввод
 char* inputString(int symCount);
 int* inputInteger();
 
+// Ввод в меню
 int inputProblemNumber(int problemsAmount, bool subProblem = false);
+char inputDataType(int problemNumber);
 
-int* inputArray(int size);
-int inputArraySize();
+// Ввод размерностей
+int inputArraySize(char cType);
+int inputMatrixSize(bool inputFirstSize, char cType);
 
-int** inputMatrix(int Rows, int Cols);
-int inputMatrixSize(bool inputFirstSize);
-
+// ожидание ввода
 void waitForInput();
 
 // РАБОТА С ФАЙЛОМ
@@ -45,29 +42,8 @@ int fileSize();
 char* readFile(int size);
 
 // ЗАДАЧА 1
-void arrayProblemMenuOption();
-
-void printMaxesInfo(int* info);
 void printZerosWrongInputInfo(int* indexesOfPair);
-
-int* getIndexesOfZsPair(int* elements, int size);
-int* multiplyZero(int* pArray, const int size);
-int* oddEvenITransformArray(int* pArray, int size);
-int findMaxElInArray(int* pArray, int size);
-int* maxOfElements(int* pArray, int size);
 bool checkZerosPair(int* indexesOfPair);
-
-// ЗАДАЧА 2
-void matrixProblemMenuOption();
-void kRowsSubOption(int** matrix, int M, int N);
-void rowsWithNegativeSubProblem(int** matrix, int Rows, int Cols);
-
-int* findMatrixKRows(int** matrix, int N);
-void printKRowsInfo(int** matrix, int N, int* kRows);
-void printRowsWithNegativeInfo(int* iOfCorrectRows, int* sums, int amountOfCorrect);
-int countOfNegative(int** matrix, int Rows, int Cols);
-int* indexesOfNegative(int** matrix, int Rows, int Cols);
-int* sumWithNegative(int** matrix, int Rows, int Cols);
 
 // ЗАДАЧА 3
 void fileProblemMenuOption();
@@ -88,7 +64,6 @@ bool isLetter(char c);
 
 // Математические дополнения
 int intPow(int n, int degree);
+double doublePow(double d, int degree);
 
-// Освобождение памяти
-void deleteMatrix(int** matrix, int rows);
 
